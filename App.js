@@ -8,11 +8,11 @@ export default class HelloWorldApp extends Component {
       uri: require(`./src/Images/dice1.png`)
     };
   }
-
+//Method to get random value from 1 to 6
   getRandomValue = () => {
     return Math.floor(Math.random() * 6) + 1;
   };
-
+//Method will call on button press
   playButtonPressed = () => {
     let ranNumber = this.getRandomValue();
     switch (ranNumber) {
